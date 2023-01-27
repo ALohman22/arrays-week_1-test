@@ -72,6 +72,17 @@ for(i=0; i<pinkAcres.length; i++){
 let totalAcres = sum1 + sum2 + sum3;
 console.log(totalAcres)
 
+// two other ways to do this opperation with less code
+// let totalAcres = 0
+// for(i = 0; i < 7; i++){
+//   totalAcres += fujiAcres[i] + galaAcres[i] = pinkAcres[i]  
+// }
+// console.log(totalAcres)
+
+// let totalAcres = [...fujiAcres, ... galaAcres, ...pinkAcres]
+// console.log(totalAcres.reduce(x,z) => x+z))
+
+
 // PROBLEM 2
 
 /*
@@ -87,8 +98,6 @@ console.log(totalAcres)
 // CODE HERE
 let averageDailyAcres = totalAcres/7
 console.log(averageDailyAcres)
-
-
 
 
 // PROBLEM 3
@@ -125,18 +134,19 @@ let days = 0
 
 // CODE HERE
 
-// while(days < 7){
-//     days++ && acresLeft-averageDailyAcres
-// } 
-// console.log(acresLeft)
-// this one kicked my butt harder than it should have. finally finding the correct form made it easier to figure out
-while (days < 7){   
-console.log(`Day ${days+1} with ${acresLeft} acres left`)
-//i finally realized the = needs to accompany a + or- in some cases
-   acresLeft -= averageDailyAcres
-   days += 1
 
-}
+// this one kicked my butt harder than it should have. finally finding the correct form made it easier to figure out
+// while (days < 7){   
+// console.log(`Day ${days+1} with ${acresLeft} acres left`)
+// //i finally realized the = needs to accompany a + or- in some cases
+//    acresLeft -= averageDailyAcres
+//    days += 1
+// }
+// this is what the question actually ased to do...
+while(acresLeft > 0){
+    days++ 
+    acresLeft -= averageDailyAcres
+} console.log(days)
 // PROBLEM 4
 
 /*
@@ -191,8 +201,20 @@ console.log(pinkTons)
 // console.log(pinkAcres) 
 // this was a double check that the original array hadnt been changed
 
+// easier and cleaner way to do it. followed along with instructor.
+// let fujiTons = fujiAcres.slice()
+// let pinkTons = pinkAcres.slice()
+// let galaTons = galaAcres.slice()
 
+// console.log(fujiTons, galaTons, pinkTons)
 
+// for(i=0; i<7; i++){
+// fujiTons[i] = fujiTons[i] * 6.5
+// galaTons[i] = galaTons[i] * 6.5
+// pinkTons[i] = pinkTons[i] * 6.5
+// }
+
+// console.log(fujiTons, galaTons, pinkTons)
 
 
 
@@ -215,13 +237,18 @@ console.log(pinkTons)
 
 // CODE HERE 
 
-for(i=0; i<fujiTons.length; i++){
-    let fujiPounds = fujiTons[i] / 2000  
-} console.log(fujiPounds)
 
 
-// let galaPounds =
-// let pinkPounds =
+let fujiPounds = 0
+let galaPounds = 0
+let pinkPounds = 0
+
+for(i=0; i<7; i++){
+    fujiPounds += fujiTons[i] * 2000
+    galaPounds += galaPounds[i] * 2000
+    pinkPounds += pinkPounds[i] *2000
+}
+
 
 
 
@@ -246,9 +273,9 @@ for(i=0; i<fujiTons.length; i++){
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPounds * fujiPrice
+let galaProfit = galaPounds * galaPrice
+let pinkProfit = pinkPounds * pinkPrice
 
 
 
@@ -266,3 +293,6 @@ for(i=0; i<fujiTons.length; i++){
 */
 
 // CODE HERE
+
+
+let totalProfit = galaProfit + pinkProfit + fujiProfit
