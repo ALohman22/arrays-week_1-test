@@ -32,5 +32,5 @@ if(faveNum === 13){
 */
 
 //CODE HERE
-for(i=1; i<=5; i++)
-console.log(2)
+for( i= 0; i < 5; i++)
+console.log(faveNum)

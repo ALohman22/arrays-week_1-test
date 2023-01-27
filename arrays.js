@@ -29,6 +29,10 @@ const numbers = [1, 2, 3, 4, 5]
 let middleNums = numbers.splice(1,3)
 console.log(middleNums)
 
+//follow along on a diffrent way
+// let middleNums = numbers.slice(1,4)
+// console.log(middleNums)
+
 //////////////////PROBLEM 4////////////////////
 /* 
   Create an empty array called 'answers'.
@@ -43,11 +47,13 @@ const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 
 // CODE HERE
 let answers =[]
-for(i=0; i<=bigOrSmallArray.length; i++)
+for(i=0; i<bigOrSmallArray.length; i++)
   if(bigOrSmallArray[i] > 100){
+    //did not have to put the {} in...
     answers.push(`${bigOrSmallArray[i]} BIG`)
     // console.log(`${bigOrSmallArray[i]} BIG`)
   } else if (bigOrSmallArray[i] <= 100 )
   // accidentally put an "else" and not an "else if" problem solved!
+  // could also just put else. 
     answers.push(`${bigOrSmallArray[i]} small`)
    console.log(answers)
