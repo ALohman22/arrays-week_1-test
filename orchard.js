@@ -215,7 +215,11 @@ console.log(pinkTons)
 
 // CODE HERE 
 
-// let fujiPounds =
+for(i=0; i<fujiTons.length; i++){
+    let fujiPounds = fujiTons[i] / 2000  
+} console.log(fujiPounds)
+
+
 // let galaPounds =
 // let pinkPounds =
 
