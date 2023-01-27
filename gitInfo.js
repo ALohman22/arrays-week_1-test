@@ -68,7 +68,7 @@ let gitAddCode = "git add ."
 
 //CODE HERE
 let gitCommitDefinition = "This creates a snashot of the files you're tracking"
-let gitCommitCode = 'the "initioal commit" code is `git commit -m "youre commit message"`'
+let gitCommitCode = 'the "initial commit" code is `git commit -m "youre commit message"`'
 // what a mess of quotations!
 
 //////////////////PROBLEM 8////////////////////
