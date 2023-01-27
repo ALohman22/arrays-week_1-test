@@ -20,10 +20,10 @@
 */
 const planning = "This is the first step, in which the end goal of the software is determined and defined. Developers typically will see what systems are already in place, and determine what features will need to be added." 
 const analysis = "Info is collected to develope the product to run as expected."
-const design = "Team make design decisions on the architecture and setthe framework that will help meet the softawre requirements."
+const design = "Team make design decisions on the architecture, design and set the framework that will help meet the softawre requirements."
 const implementation = "writing actual code. once the dev gets design doc, it is translated into source code."
-const testing = "thouroghly tests the code to ensure no bugs are left"
-const maintain = "product is released to production environment."
+const testing = "thouroghly tests the code to ensure no bugs are left,release"
+const maintain = "continuing to improve."
 
 // most of these answeres ar general. I had notes that i took day one but had to get a new laptop so they are all gone. 
 // These answeres were found primarily on google, reviewing the old lectures.
